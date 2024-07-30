@@ -11,6 +11,11 @@ def get_current_weather(city="Delhi"):
   return weather_data
 
 if __name__ == "__main__":
-  print("\n*** Get current weather condition ***\n")
-  city = input("\nPlease enter a city name:\n")
-  pprint(get_current_weather(city))
+  print('\n*** Get Current Weather Conditions ***\n')
+
+  city = input("\nPlease enter a city name: ")
+
+  weather_data = get_current_weather(city)
+
+  print("\n")
+  pprint(weather_data)
